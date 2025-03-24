@@ -1880,9 +1880,6 @@ __forceinline bool SendRequestMixExit()
     spe.Send();\
 }
 
-//----------------------------------------------------------------------------
-// CG [0xB2][0x01] 
-//----------------------------------------------------------------------------
 #define SendRequestBCReg()\
 {\
 	CStreamPacketEngine spe;\

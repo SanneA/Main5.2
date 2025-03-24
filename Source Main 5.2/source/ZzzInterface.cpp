@@ -1,6 +1,3 @@
-///////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
 #include <imm.h>
 #include "UIManager.h"
@@ -7601,9 +7598,7 @@ void MoveHero()
 							//else
 							Wall = TW_NOGROUND;
 							WORD CurrAtt = TerrainWall[TargetY*256+TargetX];
-							if ( CurrAtt>=Wall && (CurrAtt&TW_ACTION)!=TW_ACTION
-								&& (CurrAtt&TW_HEIGHT)!=TW_HEIGHT
-								)
+							if ( CurrAtt>=Wall && (CurrAtt&TW_ACTION)!=TW_ACTION && (CurrAtt&TW_HEIGHT)!=TW_HEIGHT)
 								DontMove = true;
 							else
 								DontMove = false;
